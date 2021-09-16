@@ -1,15 +1,6 @@
-/*** Color setting ***/
 :root {
   --side-bar-bg-color: rgba(231,153,176,0.5);
   --window-border: 2px solid #E799B0;
-/*  --active-file-bg-color: #E799B0;
-  --active-file-text-color: #ffffff;
-  --active-file-border-color: #757575;
-  --active-search-item-bg-color: #23242b;
-  --item-hover-bg-color: #ececec;
-  --item-hover-text-color: #000000;
-  --control-text-color: #ddd;*/
-  /*--code-cursor: #f0f0f0;*/
 }
 html,
 body,
@@ -34,13 +25,11 @@ content {
   box-shadow: 0px 5px 10px #E799B0;
 }
 
-/*** Btn in search bar ***/
 #filesearch-case-option-btn,
 #filesearch-word-option-btn {
   background: #E799B0;
 }
 
-/****** Sidebar ******/
 #typora-sidebar {
   color: #404040;
   font-weight: bold;
@@ -115,7 +104,6 @@ content {
 
 .sidebar-footer {
   background: #f0bfce;
-  /*border-top: 1px #de7292 solid;*/
 }
 
 .html-for-mac #file-library-search-input {
