@@ -1,28 +1,62 @@
 :root {
   --side-bar-bg-color: rgba(231,153,176,0.5);
   --window-border: 2px solid #E799B0;
+
+  --text-color: #34495e;
+  --font-sans-serif: "思源宋体", "Ubuntu", "Source Sans Pro", sans-serif !important;
+  --font-monospace: "Fira Code", "思源黑体", monospace !important;
+
+  --base-font: -apple-system, "Fira Code", "思源黑体", "Noto Sans", "Helvetica Neue", Helvetica,
+    "Nimbus Sans L", Arial, "Liberation Sans", "Noto Sans CJK SC", "PingFang SC",
+    "Hiragino Sans GB", "Source Han Sans SC", "Source Han Sans CN",
+    "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti",
+    SimHei, "WenQuanYi Zen Hei Sharp", "Ubuntu", "Source Sans Pro", monospace;
 }
-html,
-body,
+
+html {
+  font-size: 15px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: initial;
+}
+
+body {
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6rem;
+  letter-spacing: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 content {
     background: #f6d9e1;
 }
 
 #write {
+  font-family: var(--base-font);
   background-color: #fff !important; 
-  width: 80%;
-  line-height: 1.6;
+  width: 85%;
   height: auto;
-  background: url("./jiaran.png") no-repeat;
+  background: url("./diana.png") no-repeat;
   background-size: 10%;
   background-position: 90% bottom;
   background-attachment: fixed;
-  margin-top: 30px;
+  /*margin-top: 30px;
   margin-bottom: 15px;
   padding-left: 80px;
-  padding-right: 80px;
+  padding-right: 80px;*/
+  margin: 0 auto;
+  padding: 4rem;
+  padding-bottom: 100px;
   border-radius: 10px;
   box-shadow: 0px 5px 10px #E799B0;
+}
+
+#write p {
+  line-height: 1.6rem;
+  word-spacing: 0.05rem;
 }
 
 #filesearch-case-option-btn,
@@ -162,7 +196,8 @@ tt {
     border: 1px solid #f3ccd8;
     background-color: #fcf2f5;
     border-radius: 3px;
-    padding-left: 5px;
+    /*padding-left: 5px;*/
+    padding:  2px 4px;
     font-size: 0.9em;
 }
 
@@ -221,4 +256,11 @@ table td {
 
 .md-reset a.md-active {
   background-color: #f6d9e1;
+}
+
+#write mark {
+  background-color: rgba(251, 211, 234, 0.6);
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin: 0 2px;
 }

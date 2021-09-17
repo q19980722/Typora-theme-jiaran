@@ -12,13 +12,43 @@
 
 ## 示例
 
-详情可见`example.md`。
+### 代码块
+
+```java
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode(int x) { val = x; }
+}
+```
 
 
 
-<img src=".\screenshot.jpg" style="zoom:80%;" />
+### 公式块
 
-<img src=".\screenshot2.jpg" style="zoom:80%;" />
+$$
+CNY[2000]>USD[3000]
+$$
+
+
+
+### 引用
+
+> 炸鸡+可乐 YYDS 耶！欸嘿！！！！嗝~ 
+>
+> 快去洗热水澡！！抬头也没关系的(๑•̀ㅂ•́)و✧ 
+>
+> 今日份高热量碳水摄入完毕！！！明天再继续减肥!
+
+
+
+### 表格
+
+|  1   |  2   |  3   |  4   |
+| :--: | :--: | :--: | :--: |
+|  勇  |  敢  |  牛  |  牛  |
+|  不  |  怕  |  困  |  难  |
 
 
 
@@ -27,8 +57,4 @@
 1. 在GitHub或者百度网盘下载此主题
 2. 打开Typora主题文件夹，并将下载的文件放进去，图片可自行替换
 3. 重启Typora将主题换成jiaran即可
-
-## 注
-
-1. 若想使文档页面平铺可修改`jiaran.css`中`#write`段，将`widgth:80%`行注释。
 
