@@ -1,20 +1,51 @@
 :root {
+  --control-text-color: #777;
+  --select-text-bg-color: rgba(223, 197, 223); /*#7e66992e;*/
+  --search-select-bg-color: #de7292;
+
   --side-bar-bg-color: rgba(231,153,176,0.5);
   --window-border: 2px solid #E799B0;
 
+  --title-color: #E799B0;
   --text-color: #34495e;
-  --font-sans-serif: "思源宋体", "Ubuntu", "Source Sans Pro", sans-serif !important;
-  --font-monospace: "Fira Code", "思源黑体", monospace !important;
+  --font-sans-serif: "思源宋体", "Source Han Sans CN", "Ubuntu", "Source Han Sans SC", "Source Sans Pro", sans-serif !important;
+  --font-monospace: "Fira Code", "思源黑体", "Noto Sans CJK SC", monospace !important;
 
   --base-font: -apple-system, "Fira Code", "思源黑体", "Noto Sans", "Helvetica Neue", Helvetica,
     "Nimbus Sans L", Arial, "Liberation Sans", "Noto Sans CJK SC", "PingFang SC",
     "Hiragino Sans GB", "Source Han Sans SC", "Source Han Sans CN",
     "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti",
     SimHei, "WenQuanYi Zen Hei Sharp", "Ubuntu", "Source Sans Pro", monospace;
+
+    --title-font: "Noto Serif CJK SC", "Songti SC", "Source Han Serif SC",
+    "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun,
+    SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN",
+    "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU,
+    "Ubuntu", "Source Sans Pro", serif;
+  --em-font: "Noto Serif CJK SC" ， "Songti SC", "Source Han Serif SC",
+    "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun,
+    SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN",
+    "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU,
+    "Ubuntu", "Source Sans Pro", serif;
+  --quota-font: "EB Garamond", Baskerville, Georgia, "Liberation Serif",
+    "TW-Kai", "Kaiti SC", STKaiti, "AR PL UKai CN", "AR PL UKai HK",
+    "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB", KaiTi, KaiTi_GB2312,
+    DFKai-SB, "TW\-Kai", serif;
+  --monospace: "Fira Code", "思源黑体", "Noto Sans", "Noto Sans CJK SC", "Cascadia code", "Sarasa Term SC", Monaco, "Deja Vu Sans Mono",
+    Consolas, "Lucida Console", "Andale Mono", "Fira Code", "Roboto Mono",
+    monospace, Courier;
+
+    --pink-1: #E799B0;
+    --pink-2: #de7292;
+    --pink-3: #eaa6ba;
+    --pink-4: #f0bfce;
+    --pink-5: #fd5eb8;
+
+    --shadow: var(--pink-4) 0px 5px 10px;
 }
 
 html {
-  font-size: 15px;
+  font-size: 16px;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-rendering: optimizelegibility;
@@ -37,12 +68,14 @@ content {
 #write {
   font-family: var(--base-font);
   background-color: #fff !important; 
-  width: 85%;
-  height: auto;
+  /*width: 85%;
+  height: auto;*/
+
   background: url("./diana.png") no-repeat;
   background-size: 10%;
   background-position: 90% bottom;
   background-attachment: fixed;
+
   /*margin-top: 30px;
   margin-bottom: 15px;
   padding-left: 80px;
@@ -50,7 +83,8 @@ content {
   margin: 0 auto;
   padding: 4rem;
   padding-bottom: 100px;
-  border-radius: 10px;
+
+  /*border-radius: 10px;*/
   box-shadow: 0px 5px 10px #E799B0;
 }
 
@@ -58,6 +92,161 @@ content {
   line-height: 1.6rem;
   word-spacing: 0.05rem;
 }
+
+body > *:first-child {
+  margin-top: 0 !important;
+}
+
+body > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+a {
+  color: var(--pink-4);
+  text-decoration: none;
+}
+#write a:hover {
+  border-bottom: 1px solid var(--pink-4);
+  color: var(--pink-4);
+  text-decoration: none;
+}
+.md-content {
+  color: var(--pink-3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  /* font-weight: bold; */
+  font-weight: 400;
+  line-height: 1.4;
+  cursor: text;
+  color: var(--title-color);
+  font-family: var(--title-font);
+}
+
+h1 tt,
+h1 code {
+  font-size: inherit !important;
+}
+h2 tt,
+h2 code {
+  font-size: inherit !important;
+}
+h3 tt,
+h3 code {
+  font-size: inherit !important;
+}
+h4 tt,
+h4 code {
+  font-size: inherit !important;
+}
+h5 tt,
+h5 code {
+  font-size: inherit !important;
+}
+h6 tt,
+h6 code {
+  font-size: inherit !important;
+}
+
+h1 {
+  padding-bottom: 0.4rem;
+  font-size: 2.2rem;
+  line-height: 1.3;
+}
+h1 {
+  text-align: center;
+  padding-bottom: 0.3em;
+  font-size: 2.2em;
+  line-height: 1.2;
+  margin: 1.6em auto 1em;
+}
+h1:after {
+  content: "";
+  display: block;
+  margin: 0.2em auto 0;
+  width: 100px;
+  height: 2px;
+  border-bottom: 2px solid var(--title-color);
+}
+
+h2 {
+  margin: 1.4em auto 0.8em;
+  padding-left: 10px;
+  line-height: 1.4;
+  font-size: 1.8em;
+  border-left: 9px solid var(--title-color);
+  border-bottom: 1px solid var(--title-color);
+}
+h3 {
+  font-size: 1.5rem;
+  margin: 1.2em auto 0.5em;
+}
+h4 {
+  font-size: 1.3rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
+h6 {
+  font-size: 1.1rem;
+}
+
+p,
+blockquote,
+ul,
+ol,
+dl,
+table {
+  margin: 0.8em 0;
+}
+
+/* horizontal rule */
+hr {
+  margin: 16px 0;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+/* 列表 */
+li > ol,
+li > ul {
+  margin: 0 0;
+}
+
+li p.first {
+  display: inline-block;
+}
+
+ul,
+ol {
+  padding-left: 2rem;
+}
+
+ul:first-child,
+ol:first-child {
+  margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+  margin-bottom: 0;
+}
+
+#write ol li,
+ul li {
+  padding-left: 0.1rem;
+}
+
+
+
 
 #filesearch-case-option-btn,
 #filesearch-word-option-btn {
@@ -213,9 +402,13 @@ tt {
 }
 
 blockquote {
-    border-left: 4px solid #E799B0;
-    padding: 0 15px;
-    color: #777777;
+  border-left: 0.3rem solid #E799B0;
+  border-radius: 0.4rem;
+  padding: 10px 15px;
+  color: #777;
+  /*background-color: var(--pink-4);
+  box-shadow: var(--pink-3);*/
+  font-family: var(--quota-font);
 }
 
 table {
@@ -241,6 +434,33 @@ table td {
     margin: 0;
     padding: 6px 13px;
 }
+table tr th:first-child,
+table tr td:first-child {
+  margin-top: 0;
+}
+
+table tr th:last-child,
+table tr td:last-child {
+  margin-bottom: 0;
+}
+
+
+/* 粗体 */
+#write strong {
+  padding: 0 2px;
+  color: var(--pink-2);
+  font-weight: 600;
+  font-family: var(--em-font);
+}
+
+/* 斜体 */
+#write em {
+  padding: 0 5px 0 2px;
+  font-family: var(--em-font);
+  /* font-style: normal;
+  color: #4abdeb; */
+}
+
 
 .md-reset {
   background-color: #fff;
@@ -263,4 +483,37 @@ table td {
   border-radius: 2px;
   padding: 2px 4px;
   margin: 0 2px;
+}
+
+#write del {
+  padding: 1px 2px;
+}
+
+/* 图片 */
+.md-image > .md-meta {
+  border-radius: 3px;
+  font-family: var(--monospace);
+  padding: 2px 0 0 4px;
+  font-size: 0.9em;
+  color: inherit;
+}
+/* 图片靠左显示 */
+p .md-image:only-child {
+  width: auto;
+  text-align: left;
+  margin-left: 2rem;
+}
+.md-tag {
+  color: inherit;
+}
+
+/* 默认有阴影 */
+#write img {
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  max-width: 914px;
+}
+
+element.style {
+  width: calc(100% - 18px);
 }
