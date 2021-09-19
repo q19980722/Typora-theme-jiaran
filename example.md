@@ -62,7 +62,7 @@ $$
 
 ## 使用方法
 
-1. 在GitHub或者百度网盘下载此主题
-2. 打开Typora主题文件夹，并将下载的文件放进去，图片可自行替换
-3. 重启Typora将主题换成jiaran即可
+1. 在GitHub或者百度网盘下载此主题。
+2. 打开Typora主题文件夹，并将下载的`jiaran.css`和`jiran-card.css`两个文件以及`jiran`文件夹复制进去，右下角的然然图片可在`jiran`文件夹中自行替换。
+3. 重启Typora将主题换成`Jiaran`或`Jiaran Card`即可。
 
