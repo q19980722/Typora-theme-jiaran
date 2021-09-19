@@ -16,6 +16,12 @@
 
 这里是==高亮==。
 
+### 复选框
+
+- [ ] 复选框1
+- [x] 复选框2
+- [ ] 复选框3
+
 ### 行内代码
 
 这里是行内代码：`int main()`。
@@ -63,6 +69,6 @@ $$
 ## 使用方法
 
 1. 在GitHub或者百度网盘下载此主题。
-2. 打开Typora主题文件夹，并将下载的`jiaran.css`和`jiran-card.css`两个文件以及`jiran`文件夹复制进去，右下角的然然图片可在`jiran`文件夹中自行替换。
+2. 打开Typora主题文件夹，并将下载的`jiaran.css`和`jiaran-card.css`两个文件以及`jiaran`文件夹复制进去，右下角的然然图片可在`jiaran`文件夹中自行替换。
 3. 重启Typora将主题换成`Jiaran`或`Jiaran Card`即可。
 
