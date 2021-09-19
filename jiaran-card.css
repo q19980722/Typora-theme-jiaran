@@ -338,7 +338,7 @@ ul li {
 }
 
 /* 搜索选项定位 */
-.searchpanel-search-option-btn{
+.ty-sidebar-search-panel .searchpanel-search-option-btn{
   top: 18px;
 }
 
