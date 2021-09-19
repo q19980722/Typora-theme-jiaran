@@ -18,19 +18,24 @@
 
 <img src=".\screenshot.jpg" style="zoom:80%;" />
 
+<img src=".\screenshot3.jpg" style="zoom:80%;" />
+
 <img src=".\screenshot2.jpg" style="zoom:80%;" />
 
 
 
 ## 使用方法
 
-1. 在GitHub或者百度网盘下载此主题
-2. 打开Typora主题文件夹，并将下载的文件放进去，图片可自行替换
-3. 重启Typora将主题换成jiaran即可
+1. 在GitHub或者百度网盘下载此主题。
+2. 打开Typora主题文件夹，并将下载的`jiaran.css`和`jiran-card.css`两个文件以及`jiran`文件夹复制进去，右下角的然然图片可在`jiran`文件夹中自行替换。
+3. 重启Typora将主题换成`Jiaran`或`Jiaran Card`即可。
 
 ## 注
 
-1. 若想使文档页面平铺可修改`jiaran.css`中`#write`段，将`widgth:80%`行注释。
+1. 提供两种样式的主题：
+   * 平铺式（例图1）：`Jiaran`
+   * 卡片式（例图2）：`Jiran Card`
+2. 右下角的然然图片，可在`jiaran`文件夹中自行替换。
 
 ## 更新说明
 
@@ -50,3 +55,15 @@
 2. 更新标题样式
 3. 更新加粗字体样式
 4. 更新搜索样式
+
+2021/9/18：
+
+1. 修复背景图渲染问题
+
+2021/9/19：
+
+1. 修改主题文件结构
+2. 优化搜索框
+3. 改变一体化模式下的菜单颜色
+4. 将卡片模式独立出来
+5. 修改代码框样式
