@@ -86,6 +86,7 @@ content {
 
   border-radius: 10px;
   box-shadow: 0px 5px 10px #E799B0;
+  z-index: 0;
 }
 
 #write p {
