@@ -59,10 +59,11 @@ body {
   letter-spacing: 0;
   margin: 0;
   overflow-x: hidden;
+  background: #f6d9e1;
 }
 
 content {
-    background: #f6d9e1;
+  background: #f6d9e1;
 }
 
 #write {
