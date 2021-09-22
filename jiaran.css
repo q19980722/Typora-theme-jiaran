@@ -1,9 +1,10 @@
 :root {
   /*嘉然*/
   --color-main: #E799B0;
-  --color-main-semitransparent: #E799B080;
-  --color-1: #fcf2f5a0;
-  --color-1-notrans：#fcf2f5；
+  --color-main-semitransparent: #e799b080;
+  --color-1: rgba(252,242,245,0.6);
+  --color-1: #fcf2f585;
+  --color-1-notrans: #fcf2f5;
   --color-2: #f9e6eb; 
   --color-3: #f6d9e1;
   --color-4: #f3ccd8;
@@ -11,10 +12,13 @@
   --color-6: #edb3c4;
   --color-7: #eaa6ba;
   --color-8: #de7292;
+  --color-8-trans: #de729285;
+  --color-9: #e99eb4;
+  --color-10: #fbd3ea85;
 
 
   --control-text-color: #777;
-  --select-text-bg-color: var(--color-2);
+  --select-text-bg-color: var(--color-3);
   --search-select-bg-color: var(--color-8);
 
   --side-bar-bg-color: var(--color-main-semitransparent);
@@ -49,7 +53,7 @@
     Consolas, "Lucida Console", "Andale Mono", "Fira Code", "Roboto Mono",
     monospace, Courier;
 
-    --shadow: var(--pink-4) 0px 5px 10px;
+    --shadow: var(--color-5) 0px 5px 10px;
 }
 
 html {
@@ -111,12 +115,12 @@ body > *:last-child {
 }
 
 a {
-  color: var(--pink-4);
+  color: var(--color-5);
   text-decoration: none;
 }
 #write a:hover {
-  border-bottom: 1px solid var(--pink-4);
-  color: var(--pink-4);
+  border-bottom: 1px solid var(--color-5);
+  color: var(--color-5);
   text-decoration: none;
 }
 .md-content {
@@ -278,7 +282,7 @@ ul li {
 }
 
 .file-list-item.active {
-  background-color: var(--color-8);
+  background-color: var(--color-8-trans);
   color: #000;
 }
 
@@ -301,7 +305,7 @@ ul li {
 }
 
 .file-node-content:active {
-  background-color: var(--color-7);
+  background-color: var(--color-8);
 }
 
 .active .file-node-content {
@@ -340,7 +344,7 @@ ul li {
 
 /* 搜索栏位置调整 */
 .ty-sidebar-search-panel {
-  border-bottom-color: #e99eb4;
+  border-bottom-color: var(--color-9);
   padding-top: 16px;
   padding-bottom: 10px;
 }
@@ -433,6 +437,7 @@ code,
 tt {
     border: 1px solid var(--color-4);
     background-color: var(--color-1-notrans);
+    /*background-color: #fcf2f5;*/
     border-radius: 3px;
     /*padding-left: 5px;*/
     padding:  2px 4px;
@@ -528,7 +533,7 @@ table tr td:last-child {
 }
 
 #write mark {
-  background-color: var(--color-2);
+  background-color: var(--color-10);
   border-radius: 2px;
   padding: 2px 4px;
   margin: 0 2px;
@@ -542,7 +547,7 @@ table tr td:last-child {
 .md-image > .md-meta {
   border-radius: 3px;
   font-family: var(--monospace);
-  padding: 2px 0 0 4px;
+  padding: 2px 0px 0px 4px;
   font-size: 0.9em;
   color: inherit;
 }
@@ -552,6 +557,7 @@ p .md-image:only-child {
   text-align: left;
   margin-left: 2rem;
 }
+
 .md-tag {
   color: inherit;
 }
@@ -612,4 +618,15 @@ input[type="checkbox"]:checked:hover:before {
   line-height: 1.2rem;
   color: #808080;
   font-weight: bold;
+}
+
+/* YAML block */
+pre.md-meta-block,
+pre.md-meta-block:active {
+  background-color: var(--color-2);
+  box-shadow: 0px 0px 10px var(--color-3);
+  border-radius: 6px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
