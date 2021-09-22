@@ -1,7 +1,7 @@
   /*向晚*/
   --color-main: #9AC8E2;
   --color-main-semitransparent: #9AC8E280;
-  --color-1: #f2f8fba0;
+  --color-1: #f2f8fb85;
   --color-1-notrans: #f2f8fb;
   --color-2: #e6f1f8; 
   --color-3: #d9eaf4;
@@ -10,11 +10,14 @@
   --color-6: #b3d6e9;
   --color-7: #a7cfe6;
   --color-8: #75b4d7;
+  --color-8-trans: #75b4d785;
+  --color-9: #99CCFF;
+  --color-10: #66CCCC85;
 
   /*贝拉*/
   --color-main: #db7d74;
   --color-main-semitransparent: #db7d7480;
-  --color-1: #fbefeea0;
+  --color-1: #fbefee85;
   --color-1-notrans: #fbefee;
   --color-2: #f6dfdc; 
   --color-3: #f2cecb;
@@ -23,11 +26,14 @@
   --color-6: #e49e97;
   --color-7: #e08d85;
   --color-8: #d25e53;
+  --color-8-trans: #d25e5385;
+  --color-9: #FF6666;
+  --color-10: #FF666685;
 
   /*珈乐*/
   --color-main: #b8a6d9;
   --color-main-semitransparent: #b8a6d980;
-  --color-1: #f6f4faa0;
+  --color-1: #f6f4fa85;
   --color-1-notrans: #f6f4fa;
   --color-2: #ede9f6; 
   --color-3: #e4def1;
@@ -36,11 +42,13 @@
   --color-6: #cabce3;
   --color-7: #c1b1de;
   --color-8: #9d84cb;
+  --color-8-trans: #9d84cb85;
+  --color-9: #CC99FF;
+  --color-10: #9999CC85;
 
   /*嘉然*/
   --color-main: #E799B0;
   --color-main-semitransparent: #e799b080;
-  --color-1: rgba(252,242,245,0.6);
   --color-1: #fcf2f585;
   --color-1-notrans: #fcf2f5;
   --color-2: #f9e6eb; 
@@ -57,7 +65,7 @@
   /*乃琳*/
   --color-main: #576690;
   --color-main-semitransparent: #57669080;
-  --color-1: #e9ecf2a0;
+  --color-1: #e9ecf285;
   --color-1-notrans: ##e9ecf2;
   --color-2: #d4d8e5; 
   --color-3: #bec5d8;
@@ -66,3 +74,6 @@
   --color-6: #7d8ab0;
   --color-7: #6777a3;
   --color-8: #4c597e;
+  --color-8-trans: #4c597e85;
+  --color-9: #6666CC;
+  --color-10: #33669985;
