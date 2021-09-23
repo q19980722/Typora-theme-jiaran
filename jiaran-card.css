@@ -553,7 +553,6 @@ p .md-image:only-child {
   max-width: 100% !important;
   box-shadow: var(--shadow);
   border-radius: 5px;
-  max-width: 914px;
 }
 
 element.style {
