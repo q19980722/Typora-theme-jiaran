@@ -563,9 +563,9 @@ p .md-image:only-child {
 
 /* 默认有阴影 */
 #write img {
+  max-width: 100% !important;
   box-shadow: var(--shadow);
   border-radius: 5px;
-  max-width: 914px;
 }
 
 element.style {
