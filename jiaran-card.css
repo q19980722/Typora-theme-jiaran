@@ -56,6 +56,11 @@
     --shadow: var(--color-5) 0px 5px 10px;
 }
 
+/* 窗口框颜色 */
+header {
+  background-color: var(--color-1-notrans);
+}
+
 html {
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
@@ -570,6 +575,11 @@ p .md-image:only-child {
 
 element.style {
   width: calc(100% - 18px);
+}
+
+/* 设置一体化菜单头 */
+.megamenu-menu-header {
+  border-bottom: 1px solid var(--color-1-notrans);
 }
 
 /* 设置一体化菜单颜色 */
