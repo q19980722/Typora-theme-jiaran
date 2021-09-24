@@ -44,6 +44,11 @@
     --shadow: var(--pink-4) 0px 5px 10px;
 }
 
+/* 窗口框颜色 */
+header {
+background-color: white;
+}
+
 html {
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
