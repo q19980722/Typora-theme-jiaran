@@ -15,6 +15,7 @@
   --color-9: #e99eb4;
   --color-10: #fbd3ea85;
 
+  --background-img: url("./jiaran/diana.png");
 
   --control-text-color: #777;
   --select-text-bg-color: var(--color-3);
@@ -87,7 +88,7 @@ content {
   /*width: 90%;*/
   height: auto;
 
-  background: url("./jiaran/diana.png") no-repeat;
+  background: var(--background-img) no-repeat;
   background-size: 10%;
   background-position: 90% bottom;
   background-attachment: fixed;
@@ -108,6 +109,11 @@ content {
 #write p {
   line-height: 1.6rem;
   word-spacing: 0.05rem;
+}
+
+/* 调整#write区下的元素属性 */
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre {
+  width: 100%;  /* 不调整为继承则导致宽度异常 */
 }
 
 body > *:first-child {
@@ -440,6 +446,11 @@ ul li {
 code,
 tt {
     border: 1px solid var(--color-4);
+    background-image: var(--background-img);
+    background-size: 10%;
+    background-position: 90% bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-color: var(--color-1-notrans);
     /*background-color: #fcf2f5;*/
     border-radius: 3px;
