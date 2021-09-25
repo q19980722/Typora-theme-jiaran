@@ -87,7 +87,7 @@ content {
 #write {
   font-family: var(--base-font);
   background-color: #fff !important; 
-  width: 90%;
+  width: 85%;
   height: auto;
 
   background: var(--background-img) no-repeat;
@@ -97,8 +97,8 @@ content {
 
   margin-top: 30px;
   margin-bottom: 15px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 7%;
+  padding-right: 14%;
   /*margin: 0 auto;
   padding: 4rem;*/
   padding-bottom: 100px;
