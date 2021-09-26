@@ -16,6 +16,7 @@
   --color-9: #e99eb4;
   --color-10: #fbd3ea85;
 
+  --background-img: url("./jiaran/diana.png");
 
   --control-text-color: #777;
   --select-text-bg-color: var(--color-3);
@@ -56,6 +57,11 @@
     --shadow: var(--color-5) 0px 5px 10px;
 }
 
+/* 窗口框颜色 */
+header {
+  background-color: var(--color-1-notrans);
+}
+
 html {
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
@@ -81,18 +87,18 @@ content {
 #write {
   font-family: var(--base-font);
   background-color: #fff !important; 
-  width: 90%;
+  width: 85%;
   height: auto;
 
-  background: url("./jiaran/diana.png") no-repeat;
+  background: var(--background-img) no-repeat;
   background-size: 10%;
   background-position: 90% bottom;
   background-attachment: fixed;
 
   margin-top: 30px;
   margin-bottom: 15px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 7%;
+  padding-right: 14%;
   /*margin: 0 auto;
   padding: 4rem;*/
   padding-bottom: 100px;
@@ -105,6 +111,11 @@ content {
 #write p {
   line-height: 1.6rem;
   word-spacing: 0.05rem;
+}
+
+/* 调整#write区下的元素属性 */
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre {
+  width: 100%;  /* 不调整为继承则导致宽度异常 */
 }
 
 body > *:first-child {
@@ -437,6 +448,11 @@ ul li {
 code,
 tt {
     border: 1px solid var(--color-4);
+    background-image: var(--background-img);
+    background-size: 10%;
+    background-position: 90% bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-color: var(--color-1-notrans);
     border-radius: 3px;
     /*padding-left: 5px;*/
@@ -570,6 +586,11 @@ p .md-image:only-child {
 
 element.style {
   width: calc(100% - 18px);
+}
+
+/* 设置一体化菜单头 */
+.megamenu-menu-header {
+  border-bottom: 1px solid var(--color-1-notrans);
 }
 
 /* 设置一体化菜单颜色 */
