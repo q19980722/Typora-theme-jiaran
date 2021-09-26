@@ -58,7 +58,7 @@
 
 /* 窗口框颜色 */
 header {
-  background-color: var(--color-1-notrans);
+  background-color: initial;
 }
 
 html {
