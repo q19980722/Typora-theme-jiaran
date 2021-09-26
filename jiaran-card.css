@@ -651,6 +651,46 @@ pre.md-meta-block:active {
   padding-right: 20px;
 }
 
+/* radio */
+input[type="radio"]:before {
+  content: "";
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  vertical-align: middle;
+  text-align: center;
+  border: 0px;
+  border-radius: 0.55rem;
+  background-color: var(--color-5);
+  margin-top: -0.4rem;
+  margin-left: -0.1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* radio hover */
+input[type="radio"]:not([disabled]):not(:checked):hover:before {
+  content: "\25CF";
+  font-size: 1rem;
+  line-height: 1rem;
+  color: var(--color-6);
+}
+
+/* radio checked */
+input[type="radio"]:checked:before {
+  content: "\25CF";
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #808080;
+}
+
+/* radio checked hover*/
+input[type="radio"]:checked:before {
+  content: "\25CF";
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #808080;
+}
+
 /* sidebar and outline */
 .pin-outline .outline-active {
   color: var(--color-main);
