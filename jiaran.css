@@ -650,3 +650,8 @@ pre.md-meta-block:active {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+/* sidebar and outline */
+.pin-outline .outline-active {
+  color: var(--color-main);
+}
