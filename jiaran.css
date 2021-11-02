@@ -566,11 +566,13 @@ table tr td:last-child {
   font-size: 0.9em;
   color: inherit;
 }
+
 /* 图片靠左显示 */
 p .md-image:only-child {
   width: auto;
   text-align: left;
   margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .md-tag {
@@ -582,6 +584,7 @@ p .md-image:only-child {
   max-width: 100% !important;
   box-shadow: var(--shadow);
   border-radius: 5px;
+  border: 0px;
 }
 
 element.style {
