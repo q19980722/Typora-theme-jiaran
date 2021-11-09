@@ -15,11 +15,12 @@
   --color-8-trans: #de729285;
   --color-9: #e99eb4;
   --color-10: #fbd3ea85;
+  --color-11: #B5D6FC;
 
   --background-img: url("./jiaran/diana.png");
 
   --control-text-color: #777;
-  --select-text-bg-color: var(--color-3);
+  --select-text-bg-color: var(--color-11);  /* specially set for source mode */
   --search-select-bg-color: var(--color-8);
 
   --side-bar-bg-color: var(--color-main-semitransparent);
@@ -82,6 +83,11 @@ body {
 
 content {
   background: var(--color-3);
+}
+
+/* set default mode's selected color */
+.in-text-selection, ::selection {
+  background-color: var(--color-3);
 }
 
 #write {
