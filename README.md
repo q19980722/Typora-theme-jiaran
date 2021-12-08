@@ -29,6 +29,7 @@
 1. 在GitHub或者百度网盘下载此主题。
 2. 打开Typora主题文件夹，并将下载的`jiaran.css`和`jiaran-card.css`两个文件以及`jiaran`文件夹复制进去，右下角的然然图片可在`jiaran`文件夹中自行替换。
 3. 重启Typora将主题换成`Jiaran`或`Jiaran Card`即可。
+4. 或者直接使用Powershell/Bash 运行 ps1/bat 脚本
 
 ## 注
 
