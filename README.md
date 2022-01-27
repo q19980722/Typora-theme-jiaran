@@ -10,6 +10,14 @@
 
 **最后，真的不知道右下然然的作者是谁了，无论如何谢谢你，我很喜欢这个然然之前还当过头像！！！阿里嘎多！（如果您不愿意在此项目中使用您的作品，请联系我立刻删除！）**
 
+主题使用字体：
+
+```
+思源宋体
+思源黑体
+Fira Code
+```
+
 ## 示例
 
 详情可见`example.md`。
@@ -42,6 +50,8 @@
 [VSCode插件：A-SOUL 提醒小助手](https://github.com/luooooob/vscode-asoul-notifications)
 
 [VSCode插件：A-SOUL鼓励师](https://github.com/as042971/vscode-asoul)
+
+[IDEA插件：A-SOUL鼓励师](https://github.com/cnsky1103/A-SOUL-Reminder)
 
 [桌面端插件：A-Soul提醒小助手](https://github.com/skykeyjoker/A-Soul-Notification)
 
@@ -105,6 +115,7 @@
 1. 优化一体化菜单边框颜色
 2. 修复一体化菜单窗口栏颜色错位
    
+
 2021/9/25
 
 1. 修复卡片模式下内容宽度异常
@@ -119,4 +130,4 @@
 
 
 
-   
+
