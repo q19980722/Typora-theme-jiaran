@@ -286,8 +286,10 @@ ul li {
 
 #typora-sidebar {
   color: #404040;
-  font-weight: bold;
+  font-family: var(--base-font);
+  /*font-weight: bold;*/  /* Bold title Error */
 }
+
 
 #sidebar-files-menu {
   border: 2px solid var(--color-main);
